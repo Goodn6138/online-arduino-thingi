@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Browser Arduino Flasher</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h2>Browser Arduino / ESP32 Compiler</h2>
+
+<textarea id="code">
+// Example Arduino code
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.println("Hello from browser compile!");
+  delay(1000);
+}
+</textarea>
+
+<br>
+
+<button onclick="compileCode()">Compile</button>
+<button onclick="connectBoard()">Connect Board</button>
+<button onclick="flashFirmware()">Flash Firmware</button>
+
+<p id="status">Status: Idle</p>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
