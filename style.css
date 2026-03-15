@@ -1,1 +1,16 @@
+body{
+font-family:Arial;
+margin:40px;
+}
 
+textarea{
+width:800px;
+height:300px;
+font-family:monospace;
+font-size:14px;
+}
+
+button{
+margin:10px;
+padding:10px 20px;
+}
